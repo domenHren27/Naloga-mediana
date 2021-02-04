@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Naloga mediana</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div style="background-color:rgb(230, 247, 255)" class="sticky-top">
+            <h1 class="display-1">Naloga mediana</h1>
+        </div>
+        
+        <div class="row">
+            <p>Seznam:</p>
+            <div class=" col-lg-6 align-self-center">
+                
+                
+                <ul class="seznam-stevil text-center"></ul>                
+                
+            </div>
+
+            <div class="col-lg-4">
+                <table class="table table-striped table-bordered table-sm" id="table-1">
+                    <tr>
+                        <th>Mediana</th>
+                        <th>Ustvarjeno dne</th>
+                    </tr>
+                    <tbody id="tbody-1">
+                        
+                    </tbody>
+                </table>
+                
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="button-col">
+                    <div>
+                        <input type="number" id="stevilo" placeholder="Dodaj število">
+                        <span id="err-num" class="text-danger"></span>
+                    </div>
+                    <button class="btn btn-secondary" id="dodaj">Dodaj število</button>
+                </div>
+                
+                <div class= "pt-2 pb-2 button-col">
+                    <button class="btn btn-secondary" id="dodaj-nakljucno">Dodaj naključno</button>                
+                    <button class="btn btn-secondary" id="odstrani-nakljucno">Odstrani naključno</button>
+                    <button class="btn btn-secondary" id="odstrani-vse">Odstrani vse</button>
+                </div>
+                
+            </div>
+            
+            <div class="col-lg-4"> 
+                <button class="btn btn-secondary" id="calculate">Calculate</button>
+                <span id="err-calc" class="text-danger"></span>
+            </div>        
+        </div>
+    
+        <footer class="row" style="height: 100px;">
+            
+            <p style="color:#cccccc" class="col align-self-center text-center">Avtor: Domen Hren</p>
+            
+        </footer>
+    </div>
+    
+
+    
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/static/js/SeznamStevil.js"></script>    
+    <script src="/static/index.js"></script>
+</body>
+</html>

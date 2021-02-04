@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(230, 247, 255)
+}
+
+.display-1 {
+    font-weight: 600;
+}
+
+ul.seznam-stevil {
+    list-style-type:none;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+ul.seznam-stevil li {
+    display: inline-block;
+    margin-right: 1rem ;
+}
+
+.button-col {
+    display:flex;
+    justify-content: space-between;
+    max-width: 90%;
+}
+#err-num {
+    display: block;
+}
+#err-calc {
+    display: block; 
+}
